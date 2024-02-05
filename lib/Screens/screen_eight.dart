@@ -129,7 +129,7 @@ class Screen8 extends StatelessWidget {
                           ],
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -172,7 +172,7 @@ class Screen8 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 16,
               ),
               Text(
                 "Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races.",
@@ -182,7 +182,7 @@ class Screen8 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 16,
               ),
               Text(
                 "For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.",
@@ -192,7 +192,7 @@ class Screen8 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 16,
               ),
               Text(
                 "For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.",
@@ -202,7 +202,7 @@ class Screen8 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 16,
               ),
               Text(
                 "Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races.",
@@ -212,7 +212,7 @@ class Screen8 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 8,
+                height: 16,
               ),
               Text(
                 " For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters. Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races. For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.",
@@ -220,6 +220,9 @@ class Screen8 extends StatelessWidget {
                   fontSize: 16,
                   color: Colors.black54,
                 ),
+              ),
+              SizedBox(
+                height: 16,
               ),
             ],
           ),
