@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/Screens/screen_five.dart';
 import 'package:news_app/Screens/screen_four.dart';
 import 'package:news_app/Screens/screen_one.dart';
+import 'package:news_app/Screens/screen_seven.dart';
 import 'package:news_app/Screens/screen_six.dart';
 import 'package:news_app/Screens/screen_three.dart';
 import 'package:news_app/Screens/screen_two.dart';
@@ -223,6 +224,40 @@ class ScreenSelecter extends StatelessWidget {
                 child: const Center(
                   child: Text(
                     'Screen 6',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Screen7(),
+                  ),
+                );
+              },
+              child: Container(
+                height: 70,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.only(
+                    topRight: Radius.circular(32),
+                    bottomRight: Radius.circular(32),
+                  ),
+                  color: Colors.blueAccent[700],
+                ),
+                child: const Center(
+                  child: Text(
+                    'Screen 7',
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
