@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen1 extends StatefulWidget {
-  const Screen1({super.key});
+class Screen4 extends StatefulWidget {
+  const Screen4({super.key});
 
   @override
-  State<Screen1> createState() => _Screen1State();
+  State<Screen4> createState() => _Screen4State();
 }
 
-class _Screen1State extends State<Screen1> {
+class _Screen4State extends State<Screen4> {
   List<String> selectedTopics = [];
 
   @override
@@ -24,7 +24,7 @@ class _Screen1State extends State<Screen1> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Select your favourite topics',
+              'Categories',
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.w900,
@@ -34,7 +34,7 @@ class _Screen1State extends State<Screen1> {
               height: 4,
             ),
             const Text(
-              'Select some of your favorite topics to let us suggest better news for you.',
+              'Thousands of articles in each category',
               style: TextStyle(
                 letterSpacing: 0,
                 fontSize: 15,
@@ -45,28 +45,6 @@ class _Screen1State extends State<Screen1> {
               height: 8,
             ),
             topicsGridView(),
-            const Spacer(),
-            //if (selectedTopics.isNotEmpty)
-            Center(
-              child: Container(
-                height: 60,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(32),
-                  color: Colors.blueAccent[700],
-                ),
-                child: const Center(
-                  child: Text(
-                    'Next',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),
