@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/Screens/profile_screen.dart';
 import 'package:news_app/Screens/screen_eight.dart';
 import 'package:news_app/Screens/screen_five.dart';
 import 'package:news_app/Screens/screen_four.dart';
@@ -330,6 +331,40 @@ class ScreenSelecter extends StatelessWidget {
                     child: const Center(
                       child: Text(
                         'Screen 9',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ProfileScreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.only(
+                        topRight: Radius.circular(32),
+                        bottomRight: Radius.circular(32),
+                      ),
+                      color: Colors.blueAccent[700],
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Profile Screen',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
