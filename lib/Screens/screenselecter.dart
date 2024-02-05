@@ -42,7 +42,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -76,7 +76,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -110,7 +110,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -144,7 +144,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -178,7 +178,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -212,7 +212,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
@@ -246,7 +246,7 @@ class ScreenSelecter extends StatelessWidget {
                 );
               },
               child: Container(
-                height: 70,
+                height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
