@@ -9,6 +9,8 @@ class FavouriteScreen extends StatefulWidget {
 }
 
 class _FavouriteScreenState extends State<FavouriteScreen> {
+  List<String> selectedTopics = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +47,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
             ),
             topicsGridView(),
             const Spacer(),
+            //if (selectedTopics.isNotEmpty)
             Center(
               child: InkWell(
                 onTap: () {
@@ -81,6 +84,20 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
     );
   }
 
+  final topics = [
+    'Sports',
+    'Politics',
+    'Life',
+    'Gaming',
+    'Animals',
+    'Nature',
+    'Food',
+    'Art',
+    'History',
+    'Fashion',
+    'Covid-19',
+    'Middle East',
+  ];
   GridView topicsGridView() {
     return GridView(
       shrinkWrap: true,
@@ -90,190 +107,43 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
         crossAxisSpacing: 8,
         mainAxisSpacing: 8,
         crossAxisCount: 2,
-        childAspectRatio: 2.75,
+        childAspectRatio: 3,
       ),
-      children: <Widget>[
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Global',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
+      children: List.generate(
+        topics.length,
+        (index) {
+          final topic = topics[index];
+          final bool selected = selectedTopics.contains(topic);
+          return GestureDetector(
+            onTap: () {
+              setState(() {
+                if (selectedTopics.contains(topic)) {
+                  selectedTopics.remove(topic);
+                } else {
+                  selectedTopics.add(topic);
+                }
+              });
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(32),
+                color:
+                    selected ? Colors.blueAccent[700] : const Color(0XFFF3F4F6),
+              ),
+              child: Center(
+                child: Text(
+                  topic,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: selected ? Colors.white : Colors.black,
+                  ),
+                ),
               ),
             ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Politics',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Life',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Gaming',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Animals',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Nature',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Food',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Art',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'History',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Fashion',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Islamic',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: const Color(0XFFF3F4F6),
-          ),
-          child: const Center(
-            child: Text(
-              'Sports',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-      ],
+          );
+        },
+      ),
     );
   }
 }
