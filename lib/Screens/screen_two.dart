@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/Screens/homepage2.dart';
 
-class HomePageScreen extends StatelessWidget {
-  const HomePageScreen({super.key});
+class Screen2 extends StatelessWidget {
+  const Screen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -83,29 +82,19 @@ class HomePageScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomePageScreen2(),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            height: 50,
-                            width: 110,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(32),
-                              color: const Color(0XFFF3F4F6),
-                            ),
-                            child: const Center(
-                              child: Text(
-                                'Random',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        Container(
+                          height: 50,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(32),
+                            color: const Color(0XFFF3F4F6),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              'Random',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
@@ -212,8 +201,8 @@ class HomePageScreen extends StatelessWidget {
                     child: Image.asset(
                       'assets/images/edferferfe.jpg',
                       fit: BoxFit.fitHeight,
-                      height: 270.0,
-                      width: 270.0,
+                      height: 300.0,
+                      width: 300.0,
                     ),
                   ),
                   const SizedBox(
@@ -222,10 +211,10 @@ class HomePageScreen extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
                     child: Image.asset(
-                      'assets/images/edferferfe.jpg',
-                      fit: BoxFit.fitHeight,
-                      height: 270.0,
-                      width: 270.0,
+                      'assets/images/art.jpg',
+                      fit: BoxFit.cover,
+                      height: 300.0,
+                      width: 300.0,
                     ),
                   ),
                   const SizedBox(
@@ -234,10 +223,10 @@ class HomePageScreen extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
                     child: Image.asset(
-                      'assets/images/edferferfe.jpg',
-                      fit: BoxFit.fitHeight,
-                      height: 270.0,
-                      width: 270.0,
+                      'assets/images/g.png',
+                      fit: BoxFit.cover,
+                      height: 300.0,
+                      width: 300.0,
                     ),
                   ),
                 ],
@@ -342,8 +331,8 @@ class HomePageScreen extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(16),
                                 child: Image.asset(
-                                  'assets/images/edferferfe.jpg',
-                                  fit: BoxFit.fitHeight,
+                                  'assets/images/art.jpg',
+                                  fit: BoxFit.cover,
                                   height: 100.0,
                                   width: 100.0,
                                 ),
@@ -392,8 +381,8 @@ class HomePageScreen extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(16),
                                 child: Image.asset(
-                                  'assets/images/edferferfe.jpg',
-                                  fit: BoxFit.fitHeight,
+                                  'assets/images/g.png',
+                                  fit: BoxFit.cover,
                                   height: 100.0,
                                   width: 100.0,
                                 ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news_app/Screens/favourite_topic.dart';
+import 'package:news_app/Screens/screen_one.dart';
+import 'package:news_app/Screens/screenselecter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           textTheme: GoogleFonts.poppinsTextTheme(),
         ),
-        home: const FavouriteScreen(),
+        home: const ScreenSelecter(),
       ),
     );
   }

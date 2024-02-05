@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePageScreen2 extends StatelessWidget {
-  const HomePageScreen2({super.key});
+class Screen3 extends StatelessWidget {
+  const Screen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -196,7 +196,7 @@ class HomePageScreen2 extends StatelessWidget {
                     child: Column(
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(16),
                             topRight: Radius.circular(16),
                           ),
@@ -207,10 +207,10 @@ class HomePageScreen2 extends StatelessWidget {
                             width: double.infinity,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -229,14 +229,116 @@ class HomePageScreen2 extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Icon(
-                              Icons.bookmark_border,
-                            ),
+                            Icon(Icons.bookmark_border),
                           ],
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    height: 24,
+                  ),
+                  Container(
+                    height: 270,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: const Color(0XFFF3F4F6),
+                    ),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(16),
+                            topRight: Radius.circular(16),
+                          ),
+                          child: Image.asset(
+                            'assets/images/art.jpg',
+                            fit: BoxFit.cover,
+                            height: 190.0,
+                            width: double.infinity,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: 300,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'The latest situation in the presidential election',
+                                    style: TextStyle(
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Icon(Icons.bookmark_border),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 24,
+                  ),
+                  Container(
+                    height: 270,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: const Color(0XFFF3F4F6),
+                    ),
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(16),
+                            topRight: Radius.circular(16),
+                          ),
+                          child: Image.asset(
+                            'assets/images/g.png',
+                            fit: BoxFit.cover,
+                            height: 190.0,
+                            width: double.infinity,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 12,
+                        ),
+                        const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: 300,
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Creating Color Palette from world around you',
+                                    style: TextStyle(
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Icon(Icons.bookmark_border),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),

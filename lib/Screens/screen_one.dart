@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Screens/homepage.dart';
+import 'package:news_app/Screens/screen_two.dart';
 
-class FavouriteScreen extends StatefulWidget {
-  const FavouriteScreen({super.key});
+class Screen1 extends StatefulWidget {
+  const Screen1({super.key});
 
   @override
-  State<FavouriteScreen> createState() => _FavouriteScreenState();
+  State<Screen1> createState() => _Screen1State();
 }
 
-class _FavouriteScreenState extends State<FavouriteScreen> {
+class _Screen1State extends State<Screen1> {
   List<String> selectedTopics = [];
 
   @override
@@ -49,30 +49,20 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
             const Spacer(),
             //if (selectedTopics.isNotEmpty)
             Center(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const HomePageScreen(),
-                    ),
-                  );
-                },
-                child: Container(
-                  height: 60,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(32),
-                    color: Colors.blueAccent[700],
-                  ),
-                  child: const Center(
-                    child: Text(
-                      'Next',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
+              child: Container(
+                height: 60,
+                width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(32),
+                  color: Colors.blueAccent[700],
+                ),
+                child: const Center(
+                  child: Text(
+                    'Next',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                 ),
