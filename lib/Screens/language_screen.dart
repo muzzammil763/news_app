@@ -43,27 +43,27 @@ class _LanguageScreenState extends State<LanguageScreen> {
             ),
             topicsGridView(),
             const Spacer(),
-            // if (selectedLanguages.isNotEmpty)
-            Center(
-              child: Container(
-                height: 60,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(32),
-                  color: Colors.blueAccent[700],
-                ),
-                child: const Center(
-                  child: Text(
-                    'Next',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+            if (selectedLanguages.isNotEmpty)
+              Center(
+                child: Container(
+                  height: 60,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(32),
+                    color: Colors.blueAccent[700],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Select',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
           ],
         ),
       ),
